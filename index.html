@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Caesar Cipher ES6</title>
+</head>
+
+<body>
+  <main class="container">
+    <h1 class="center-align cyan-text text-darken-2">Cifrado Cesar</h1>
+    <div class="row">
+      <form class="col s10 offset-s1">
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="input-msg" type="text" class="validate">
+            <label for="input-msg" class="cyan-text text-darken-2">Mensaje</label>
+          </div>
+        </div>
+        <div>
+          <a id="cipher-btn" class="waves-effect waves-light btn cyan lighten-2 disabled">cifrar</a>
+          <a id="decipher-btn" class="waves-effect waves-light btn cyan lighten-2 disabled">descifrar</a>
+        </div>
+      </form>
+      <div id="result-container" class="col s10 offset-s1">
+        <p id="result-msg"></p>
+        <p id="result"></p>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
