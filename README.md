@@ -1,57 +1,30 @@
 # Cifrado César
 
-> Recuerda seguir siempre esta [guía de estilos](https://github.com/Laboratoria/js-style-guide/)
+>El cifrado César, tambien conocido como cifrado por desplazamiento, es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra que se encuentra un número fijo de posiciones más adelante en el alfabeto.
 
-Crea una web que pida, por medio de un `prompt()`, una frase al usuario y
-devuelva el mismo mensaje encriptado según el
-[algoritmo de Cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher)
-con el parámetro de desplazamiento de **33 espacios hacia la derecha**
+Para este proyecto, la web trabaja con **33 espacios hacia la derecha**.
 
 Por ejemplo:
 
-- Texto original:   `ABCDEFGHIJKLMNOPQRSTUVWXYZ`
+- Texto original: `ABCDEFGHIJKLMNOPQRSTUVWXYZ`
 - Texto codificado: `HIJKLMNOPQRSTUVWXYZABCDEFG`
-  
-## Entregables
 
-Para cada producto debes entregar **un repositorio de GitHub** que
-contenga:
-1. Archivo `README.md` que explique el **pseudocódigo** de tu solución y su
-**diagrama de flujo**
-2. Archivo `app.js` con el **código** de tu solución
-3. Archivo `index.html` vinculado con tu `app.js`
+Al ingresar a la página, se solicita al usuario ingresar un mensaje en un input, y luego se ofrecen las opciones de cifrado o descifrado mediante botones.
 
-## Tips
+El resultado de la conversión del texto se mostrará en la parte inferior.
 
-A continuación un video de Michelle que te lleva a través de la fórmula
-matemática del Cifrado César y un par de cosas más que debes saber para
-resolver este reto. ¡Escúchala con detenimiento y sigue sus consejos! :)
+![web Cifrado César](assets/docs/caesar-cipher.png)
 
-[![tips caesar cipher](https://img.youtube.com/vi/zd8eVrXhs7Y/0.jpg)](https://www.youtube.com/watch?v=zd8eVrXhs7Y)
+## Especificaciones
 
-También te compartimos más información de lo que Michelle te ha explicado 
-en el video anterior:
+- El input admite todos los caracteres.
+- Solo se realizan el cifrado o descifrado de letras mayúsculas o minúsculas sin tildes.
+- Los demás caracteres se mostrarán tal cual en el resultado, como se puede ver en la imagen de ejemplo.
 
-- [Aprende más sobre `charCodeAt()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/charCodeAt)
-- [Aprende más sobre `String.fromCharCode()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/fromCharCode)
-- [Aprende más sobre `ASCII`](http://conceptodefinicion.de/ascii/)
+## Herramientas utilizadas
 
-## Consideraciones específicas
-
-1. Tu programa debe ser capaz de cifrar y descifrar tanto letras 
-   mayúsculas como minúsculas. La fórmula para descifrar es: `(x - n) % 26`
-2. Tu código debe estar compuesto por 2 funciones con los siguientes 
-   nombres: `cipher` y `decipher`
-3. El usuario no debe poder ingresar un campo vacío o que contenga números
-
-## Criterios de evaluación
-
-Se tomarán en cuenta las siguientes consideraciones a la hora de evaluar tu solución:
-
-1. Nombramiento de variables
-2. Indentación
-3. Validación de input: el usuario no debe poder ingresar un campo vacío o de tipo que no corresponda
-4. Estructura de tus archivos
-5. Archivo `README.md` correctamente redactado
-6. Uso de comentarios para hacer tu código más legible
-7. Que el programa cumpla con el propósito requerido
+- Materialize
+- Javascript ES6
+- jQuery
+- HTML5
+- CSS3

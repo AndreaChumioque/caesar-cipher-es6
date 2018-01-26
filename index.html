@@ -13,20 +13,27 @@
 
 <body>
   <main class="container">
-    <h1 class="center-align cyan-text text-darken-2">Cifrado Cesar</h1>
+    <h2 class="center-align cyan-text text-darken-2">Cifrado Cesar</h2>
     <div class="row">
       <form class="col s10 offset-s1">
+        <!-- Input para ingresar el mensaje -->
         <div class="row">
           <div class="input-field col s12">
             <input id="input-msg" type="text" class="validate">
             <label for="input-msg" class="cyan-text text-darken-2">Mensaje</label>
           </div>
         </div>
-        <div>
-          <a id="cipher-btn" class="waves-effect waves-light btn cyan lighten-2 disabled">cifrar</a>
-          <a id="decipher-btn" class="waves-effect waves-light btn cyan lighten-2 disabled">descifrar</a>
+        <!-- Botones para cifrar o descifrar -->
+        <div class="row">
+          <div class="col s12 m3">
+            <a id="cipher-btn" class="waves-effect waves-light btn cyan lighten-2 disabled">Cifrar</a>
+          </div>
+          <div class="col s12 m3">
+            <a id="decipher-btn" class="waves-effect waves-light btn cyan lighten-2 disabled">Descifrar</a>
+          </div>
         </div>
       </form>
+      <!-- Resultado de cifrado -->
       <div id="result-container" class="col s10 offset-s1">
         <p id="result-msg"></p>
         <p id="result"></p>
